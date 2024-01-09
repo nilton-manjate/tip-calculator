@@ -1,1 +1,144 @@
-﻿
+﻿/* Import fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/* Declare variables */
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --darkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --grayishCyan: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --space: 'Space Mono', monospace;
+}
+
+/* Reset the stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--lightGrayishCyan);
+  font-family: var(--space);
+}
+
+/* Header */
+header h1 {
+  color: var(--darkCyan);
+  letter-spacing: 5px;
+}
+
+/* Main */
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+/* Section Bill */
+.bill {
+  position: relative;
+}
+
+h2{
+  color: var(--darkCyan);
+}
+
+.bill img {
+  position: absolute;
+  color: var(--grayishCyan);
+  font-size: 25px;
+  left: 15px;
+  bottom: 10px;
+}
+
+.bill input {
+  width: calc(100% - 10px);
+  font-size: 25px;
+  font-family: var(--space);
+  text-align: right;
+  color: var(--darkCyan);
+  background-color: var(--veryLightGrayishCyan);
+  padding-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* Section of buttons */
+.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 160px 160px;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 10px;
+  background-color: var(--darkCyan);
+  color: white;
+  font-family: var(--space);
+  font-size: 25px;
+  border: none;
+  border-radius: 5px; 
+}
+
+/* Green section at bottom */
+.total {
+  background-color: var(--darkCyan);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.totalContainer {
+  padding-top: 20px;
+}
+
+/* Div Line Result */
+.lineResult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.lineResult span {
+  font-size: 25px;
+  color: var(--strongCyan);
+}
+
+.description p {
+  color: var(--grayishCyan);
+}
+
+/* Reset button */
+.total button {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--span);
+  font-size: 25px;
+  background-color: var(--strongCyan);
+  color: var(--darkCyan);
+  border: none;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  color: var(--darkCyan);
+}
+
+footer a {
+  color: var(--darkCyan);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
