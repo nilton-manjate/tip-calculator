@@ -13,10 +13,11 @@
   </header>
   
   <main>
+    <form method="GET" action="cadastro.php">
     <section class="bill">
       <h2>Bill</h2>
       <img src="assets/images/icon-dollar.svg" alt="Dollar sign">
-      <input class="display" value="142.55">
+      <input class="display" value="142.55" type="number">
     </section>
 
     <section class="tip">
@@ -27,14 +28,14 @@
         <button>15%</button>
         <button>25%</button>
         <button>50%</button>
-        <button id="custom">Custom</button>
+        <input id="custom" placeholder="Custom" type="number">
       </div>
     </section>
 
     <section class="bill">
       <h2>Number of People</h2>
       <img src="assets/images/icon-person.svg" alt="Person Icon">
-      <input class="display" value="5">
+      <input class="display" value="5" type="number">
     </section>
 
     <section class="total">
@@ -58,6 +59,7 @@
 
       <button>RESET</button>
     </section>
+    </form>
   </main>
 
   <footer>
