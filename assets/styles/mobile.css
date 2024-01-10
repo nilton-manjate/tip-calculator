@@ -29,31 +29,34 @@ body {
 }
 
 /* Header */
-header h1 {
-  color: var(--darkCyan);
-  letter-spacing: 5px;
+header {
+  margin: 40px 0px;
 }
 
 /* Main */
 main {
   background-color: white;
   padding: 20px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 /* Section Bill */
 .bill {
   position: relative;
+  margin-bottom: 30px;
 }
 
 h2{
   color: var(--darkCyan);
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .bill img {
   position: absolute;
   color: var(--grayishCyan);
   font-size: 25px;
-  left: 15px;
+  left: 20px;
   bottom: 10px;
 }
 
@@ -65,8 +68,13 @@ h2{
   color: var(--darkCyan);
   background-color: var(--veryLightGrayishCyan);
   padding-right: 10px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
+}
+
+.bill input:hover {
+  cursor: pointer;
+  border-color: var(--strongCyan);
 }
 
 
@@ -76,6 +84,7 @@ h2{
   display: grid;
   grid-template-columns: 160px 160px;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
 .buttons button {
@@ -86,6 +95,25 @@ h2{
   font-size: 25px;
   border: none;
   border-radius: 5px; 
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: var(--strongCyan);
+}
+
+#custom {
+  background-color: var(--lightGrayishCyan);
+  color: var(--grayishCyan);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--space);
+}
+
+#custom:hover {
+  cursor: pointer;
 }
 
 /* Green section at bottom */
@@ -113,6 +141,10 @@ h2{
   color: var(--strongCyan);
 }
 
+.description h3 {
+  font-size: 16px;
+}
+
 .description p {
   color: var(--grayishCyan);
 }
@@ -129,9 +161,14 @@ h2{
   border-radius: 10px;
 }
 
+.total button:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   color: var(--darkCyan);
+  margin-top: 50px;
 }
 
 footer a {
@@ -141,4 +178,32 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Syle for larger screens */
+@media only screen and (min-width: 992px) {
+  form {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    column-gap: 60px;
+  }
+
+  .bill input {
+    width: 435px;
+  }
+
+  .buttons {
+    grid-template-columns: 140px 140px 140px;
+  }
+
+  .total {
+    grid-area: 1 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .total span {
+    font-size: 40px;
+  }
 }
