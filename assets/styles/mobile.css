@@ -95,11 +95,14 @@ h2{
   font-size: 25px;
   border: none;
   border-radius: 5px; 
+  transition: 1s;
 }
 
 .buttons button:hover {
   cursor: pointer;
-  background-color: var(--strongCyan);
+  background-color: rgb(159, 232, 223);
+  color: var(--darkCyan);
+  transition: .8s;
 }
 
 #custom {
@@ -159,10 +162,13 @@ h2{
   color: var(--darkCyan);
   border: none;
   border-radius: 10px;
+  transition: 1s;
 }
 
 .total button:hover {
   cursor: pointer;
+  background-color: rgb(159, 232, 223);
+  transition: .8s;
 }
 
 /* Footer */
